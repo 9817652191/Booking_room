@@ -44,12 +44,12 @@ body
         border-radius: 0px 4px 4px 0px
     &-text
         color: #fff
-        padding: 32px 21px 25px 32px
+        padding: 31px 21px 25px 32px
     &-name 
         font-weight: bold
         font-size: 18px
-        margin-top: 0
-        margin-bottom: 24px
+        margin-top: 0px
+        margin-bottom: 25px
     &-stars
         display: none
     &-star 
@@ -62,17 +62,18 @@ body
         overflow: scroll
         height: 165px
     &-apartments
-        height: 67px
+        height: 66px
         display: flex
-        flex-flow: column nowrap
+        flex-flow: column
         justify-content: space-between
         &__text
             display: flex
             span 
+                align-self: center
                 font-weight: normal
                 font-size: 12px
                 margin-left: 14px
-                line-height: 15px
+                line-height: 14px
                 .state
                     margin-left: 6px
     &-book
@@ -85,7 +86,7 @@ body
         line-height: 30px
         height: 100%
         &__old
-            margin-top: 24px
+            margin-top: 25px
             font-size: 14px
             line-height: 18px
             text-decoration-line: line-through
@@ -96,8 +97,13 @@ body
         border: 0
         border-radius: 4px
         font-weight: 600
-        font-size: 14px
+        font-size: 13.5px
         color: #fff
+        padding: 0
+        padding-top: 2px
+        padding-right: 2px
+        span
+        
         &:hover
             background: #fd7d7f
             transform: scale(1.1)
@@ -149,7 +155,7 @@ body
         &-name 
             font-weight: bold
             font-size: 18px
-            margin-top: 6px
+            margin-top: 7px
             margin-bottom: 29px
         &-stars
             display: flex
@@ -157,13 +163,13 @@ body
             display: block
         &-apartments
             margin-top: 34px
-            margin-left: 4px
+            margin-left: 3px
         &-book
             display: flex
             justify-content: space-between
             align-items: center
         &-prise
-            margin-left: 2px
+            margin-left: 3px
             &__old
                 margin-top: 37px
-                margin-left: 2px
+                margin-left: 3px
