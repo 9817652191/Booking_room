@@ -1,0 +1,169 @@
+body
+    background: #F5FAFE
+    max-width: 1140px
+    margin: auto
+    font-family: 'Muli', sans-serif
+    h1 
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        color: #333333
+        margin-top: 40px
+        margin-bottom: 65px
+.hotels
+    display: flex
+    flex-flow: wrap   
+    justify-content: space-around
+.hotel
+    width: 350px
+    height: 500px
+    margin-bottom: 30px
+    border-radius: 8px
+    background: #0A223D
+    &-img
+        position: relative
+        width: 350px
+        height: 250px
+        object-fit: cover
+        overflow: hidden
+        border-radius: 8px 8px 0 0
+    &-flash-offer
+        position: absolute
+        top: 26px
+        left: 0
+        width: 60px
+        height: 18px
+        background: #EC1F46
+        font-weight: 600
+        font-size: 8px
+        line-height: 18px
+        color: #fff
+        text-align: center
+        border-radius: 0px 4px 4px 0px
+    &-text
+        color: #fff
+        padding: 32px 21px 25px 32px
+    &-name 
+        font-weight: bold
+        font-size: 18px
+        margin-top: 0
+        margin-bottom: 24px
+    &-stars
+        display: none
+    &-star 
+        margin-right: 2px
+    &-dscr
+        font-weight: normal
+        font-size: 14px
+        line-height: 1.61em
+        display: none
+        overflow: scroll
+        height: 165px
+    &-apartments
+        height: 67px
+        display: flex
+        flex-flow: column nowrap
+        justify-content: space-between
+        &__text
+            display: flex
+            span 
+                font-weight: normal
+                font-size: 12px
+                margin-left: 14px
+                line-height: 15px
+                .state
+                    margin-left: 6px
+    &-book
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-prise
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
+        height: 100%
+        &__old
+            margin-top: 24px
+            font-size: 14px
+            line-height: 18px
+            text-decoration-line: line-through
+    .btn
+        width: 120px
+        height: 40px
+        background: #EC1F46
+        border: 0
+        border-radius: 4px
+        font-weight: 600
+        font-size: 14px
+        color: #fff
+        &:hover
+            background: #fd7d7f
+            transform: scale(1.1)
+        &:focus
+            outline: none
+.big 
+    position: relative
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        left: -40px
+        width: 50px
+        height: 500px
+        background: #0A223D
+    .hotel
+        &-img
+            position: absolut
+            top: 0
+            left: -380px
+            width: 366px
+            height: 500px
+            overflow: visible
+            border-radius: 0
+            .owerflow   
+                position: relative
+                width: 366px
+                height: 500px
+                overflow: hidden
+                border-radius: 8px 0 0 8px
+                img
+                    position: absolute
+                    height: 100%
+        &-flash-offer
+            width: 84px
+            height: 30px
+            font-size: 12px
+            line-height: 30px
+            text-align: start
+            padding-left: 11px
+        &-text
+            position: absolute
+            top: 0
+            left: -14px
+            color: #fff
+            padding: 46px 21px 25px 43px
+            width: 300px
+        &-name 
+            font-weight: bold
+            font-size: 18px
+            margin-top: 6px
+            margin-bottom: 29px
+        &-stars
+            display: flex
+        &-dscr
+            display: block
+        &-apartments
+            margin-top: 34px
+            margin-left: 4px
+        &-book
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-prise
+            margin-left: 2px
+            &__old
+                margin-top: 37px
+                margin-left: 2px
